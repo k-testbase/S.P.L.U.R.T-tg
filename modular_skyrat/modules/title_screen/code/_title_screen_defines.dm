@@ -1,6 +1,6 @@
 #define DEFAULT_TITLE_MAP_LOADTIME (150 SECONDS)
 
-#define DEFAULT_TITLE_SCREEN_IMAGE 'modular_zzplurt/icons/UI_Icons/title_screen/splurt_title_screen.png' // SPLURT EDIT START: TITLE SCREEN - old value: 'modular_skyrat/modules/title_screen/icons/skyrat_title_screen.png'
+#define DEFAULT_TITLE_SCREEN_IMAGE 'modular_zzplurt/icons/UI_Icons/title_screen/splurt_banner_background.png' // SPLURT EDIT START: TITLE SCREEN - old value: 'modular_skyrat/modules/title_screen/icons/skyrat_title_screen.png'
 #define DEFAULT_TITLE_LOADING_SCREEN 'modular_skyrat/modules/title_screen/icons/loading_screen.gif'
 
 #define TITLE_PROGRESS_CACHE_FILE "data/progress_cache.json"
@@ -111,8 +111,7 @@
 					border: 2px solid white;
 					border-radius: 4px;
 					box-shadow: 2px 2px #333, inset 1px 1px #333;
-					background: linear-gradient(to bottom, rgba(68, 68, 204, 0.9), rgba(0, 0, 102, 0.9));
-					opacity: 75%;
+					background: linear-gradient(to bottom, rgba(68, 68, 204, 0.4), rgba(0, 0, 102, 0.4));
 					padding: 1em;
 				}
 

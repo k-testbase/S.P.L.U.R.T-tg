@@ -8,11 +8,12 @@
 /datum/loadout_item/head/pinwheel_hat/gold //sprites by Keila.
 	name = "Magnificent Pinwheel Hat"
 	item_path = /obj/item/clothing/head/helmet/toggleable/pinwheel/gold
-	ckeywhitelist = list("malice69", "miniusAreas", "gavla", "hydrosatan", "nevimer", "naruga", "OmegaTracing", "KeRSe", "CprlEvergreen", "RiskyBusiness", "Slouista", "SapphoQueer", "LordGingy", "ARandomHyena", "LiuJr", "jamiemundy", "snajper202", "snaffle15", "sonicgotnuked", "fellis", "laetex", "especiallystrange", "ghostie_dwagons", "Kidkirby",)
+	ckeywhitelist = list("malice69", "miniusAreas", "gavla", "hydrosatan", "nevimer", "naruga", "OmegaTracing", "KeRSe", "CprlEvergreen", "RiskyBusiness", "Slouista", "SapphoQueer", "LordGingy", "ARandomHyena", "LiuJr", "jamiemundy", "snajper202", "snaffle15", "sonicgotnuked", "fellis", "laetex", "especiallystrange", "ghostie_dwagons", "Kidkirby", "Destrucktoid", "Vulpesishot")
 
 //11/08/23: Added as a reward to people who have recommended friends to Bubberstation. Add to this list as you please, you can offer this as a reward for basically anything.
 //Please mark the date and what this was awarded for in code comments here. For example:
 //XX/XX/XX: Added as a reward for EXAMPLE EVENT's winners.
+//6/21/2025: Given as a reward to the duo winners of toolbox tournament held on the same day. Vulpesishot and Destrucktoid.
 
 /datum/loadout_item/head/idmaberet
 	name = "IDMA Beret"
@@ -112,7 +113,7 @@
 /datum/loadout_item/suit/holographic
 	name = "Holographic Suit V4000"
 	item_path = /obj/item/clothing/suit/misc/holographic
-	ckeywhitelist = list("blovy", "snailomi")
+	//ckeywhitelist = list("blovy", "snailomi") //Splurt Edit: Requested public by Blovy
 
 /datum/loadout_item/suit/flight //Donor item for ironknight060
 	name = "MA-1 flight jacket"
@@ -159,7 +160,7 @@
 /datum/loadout_item/toys/largeredslime
 	name = "Large Red Slime Plush"
 	item_path = /obj/item/toy/plush/largeredslime
-	ckeywhitelist = list("blovy")
+	//ckeywhitelist = list("blovy") //Splurt Edit: Requested public by Blovy
 
 /*
 *	GLOVES
@@ -182,7 +183,7 @@
 /datum/loadout_item/inhand/ornate_bottle	//Donator item exclusive for Blovy. Sprited by Casey/Keila.
 	name = "Ornate Bottle"
 	item_path = /obj/item/reagent_containers/cup/glass/bottle/ornate
-	ckeywhitelist = list("blovy")
+	//ckeywhitelist = list("blovy") //Splurt Edit: Requested public by Blovy
 
 /datum/loadout_item/inhand/vaporsac //donator request for MyGuy49
 	name = "Vaporsac Seeds"

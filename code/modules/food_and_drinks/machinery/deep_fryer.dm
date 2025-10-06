@@ -11,7 +11,7 @@ GLOBAL_LIST_INIT(oilfry_blacklisted_items, typecacheof(list(
 	/obj/item/slimecrossbeaker/autoinjector, //same as medipen
 )))
 
-/obj/machinery/deepfryer//SKYRAT EDIT - ICON OVERRIDDEN BY AESTHETICS - SEE MODULE
+/obj/machinery/deepfryer
 	name = "deep fryer"
 	desc = "Deep fried <i>everything</i>."
 	icon = 'icons/obj/machines/kitchen.dmi'
@@ -250,5 +250,10 @@ GLOBAL_LIST_INIT(oilfry_blacklisted_items, typecacheof(list(
 	return ..()
 
 /obj/machinery/deepfryer/proc/on_cleaned(obj/source_component, obj/source)
+	SIGNAL_HANDLER
+
+	. = NONE
+
 	grease_level = 0
 	update_appearance(UPDATE_OVERLAYS)
+	. |= COMPONENT_CLEANED|COMPONENT_CLEANED_GAIN_XP

@@ -129,7 +129,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 	var/datum/record/locked/lockfile = new(
 		age = person.age,
 		chrono_age = person.chrono_age, // SKYRAT EDIT ADDITION - Chronological age
-		blood_type = record_dna.blood_type.name,
+		blood_type = person.get_bloodtype()?.name || "UNKNOWN",
 		character_appearance = character_appearance,
 		dna_string = record_dna.unique_enzymes,
 		fingerprint = md5(record_dna.unique_identity),
@@ -143,15 +143,14 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 		locked_dna = record_dna,
 		mind_ref = person.mind,
 		// BUBBER EDIT ADDITION BEGIN - Records
-		exploitable_information = person_client?.prefs.read_preference(/datum/preference/text/exploitable) || "",
-		background_information = person_client?.prefs.read_preference(/datum/preference/text/background) || "",
+		exploitable_information = person_client?.prefs.read_preference(/datum/preference/text/security) || "",
 		// BUBBER EDIT END
 	)
 
 	new /datum/record/crew(
 		age = person.age,
 		chrono_age = person.chrono_age, // SKYRAT EDIT ADDITION - Chronological age
-		blood_type = record_dna.blood_type.name,
+		blood_type = person.get_bloodtype()?.name || "UNKNOWN",
 		character_appearance = character_appearance,
 		dna_string = record_dna.unique_enzymes,
 		fingerprint = md5(record_dna.unique_identity),
